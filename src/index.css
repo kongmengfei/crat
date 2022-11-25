@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: PingFang;
+  src: url('./fonts/PingFang-SC-Regular.ttf');
+}
+
+.app {
+
+  width: 100%;
+  position: relative;
+}
+
+.clickbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;  
+}
+
+.time1 {
+  margin-top: 349px;
+  margin-left: 143px;
+  color: black;
+  font-size: 32px;
+  background-color: white;
+  max-width: 420px;
+}

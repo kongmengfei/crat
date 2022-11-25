@@ -1,29 +1,28 @@
-import React from 'react';
-import styles from './styles/App.module.scss';
-import headerbg from './images/bg-header-default.png';
+import React, { useEffect, useState } from 'react';
+import date from 'date-and-time';
+
+import jietu from './images/Screenshot.jpg';
 
 function App() {
+  const [time1, settime1] = useState<string>('2022-11-16 08:51:58');
+
+  useEffect(() => {
+    let intervalID = setInterval(function () {
+      let now = new Date();
+      let s = date.format(now, 'YYYY-MM-DD HH:mm:ss');
+      settime1(s);
+    }, 1e3);
+
+    return () => { clearInterval(intervalID) };
+  }, []);
+
+
   return (
-    <div className={styles.App}>
+    <div className='app'>
 
-      <header className={styles.header}>
-        <img src={headerbg}></img>
-      </header>
-      <section className={styles.main}>
-        <div className={styles.content}>
-          <div className={styles.location}>
-            <div className={styles.line1}>
-              <div className={styles.weizhi}>大连软件园16号楼</div>
-              <div className={styles.sucbox}>登记成功</div>
-            </div>
-          </div>
-          <div className={styles.userinfo}>
-
-          </div>
-        </div>
-      </section>
-      <div className={styles.fixiconwrap}>
-
+      <img src={jietu} alt="jietu" style={{ width: '100%' }} />
+      <div className='clickbox'>
+        <div className='time1'>{time1}</div>
       </div>
     </div>
   );
