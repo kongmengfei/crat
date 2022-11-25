@@ -21,6 +21,7 @@ $unit: calc(1 / 750 * 100vw);
     .main {
         padding: 0 40 * $unit;
         margin-top: -112 * $unit;
+        position: relative;
         background-color: transparent;
         min-height: 400px;
 
