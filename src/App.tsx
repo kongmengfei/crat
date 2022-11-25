@@ -20,7 +20,7 @@ function App() {
   return (
     <div className='app'>
 
-      <img src={jietu} alt="jietu" style={{ width: '100%' }} />
+      <img src={jietu} alt="jietu" className='jietu'/>
       <div className='clickbox'>
         <div className='time1'>{time1}</div>
       </div>
