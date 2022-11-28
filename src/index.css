@@ -37,10 +37,10 @@ code {
 }
 
 .time1 {
-  margin-top: 349px;
-  margin-left: 143px;
-  color: black;
-  font-size: 32px;
-  background-color: white;
-  max-width: 420px;
+  background-color: #fff;
+    color: rgb(50,50,50);
+    font-size: 18px;
+    margin-left: 74px;
+    margin-top: 180px;
+    max-width: 420px;
 }
