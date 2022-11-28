@@ -38,9 +38,27 @@ code {
 
 .time1 {
   background-color: #fff;
-    color: rgb(50,50,50);
-    font-size: 18px;
-    margin-left: 74px;
-    margin-top: 180px;
-    max-width: 420px;
+  color: rgb(50, 50, 50);
+  font-size: 17px;
+  margin-left: 74px;
+  margin-top: 180px;
+  max-width: 420px;
+}
+
+.time2 {
+  background-color: #fff;
+  color: #666666;
+  font-size: 14px;
+  margin-left: 213px;
+  margin-top: 386px;
+  max-width: 140px;
+}
+
+.time3 {
+  background-color: #fff;
+  color: #686868;
+  font-size: 14px;
+  margin-left: 213px;
+  margin-top: 76px;
+  max-width: 140px;
 }
